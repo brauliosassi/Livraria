@@ -13,6 +13,9 @@ public abstract class Livro {
 		this.isbn = "000-00-00000-00-0";
 		this.setImpresso(true);
 	}
+	
+	public abstract boolean aplicaDescontoDe(double porcentagem);
+		
 	void mostrarDetalhes() {
 		System.out.println("Mostrando detalhes do livro");
 		System.out.println("Nome: "+nome);
@@ -26,13 +29,13 @@ public abstract class Livro {
 		System.out.println("--");
 	}
 		
-	public boolean aplicaDescontoDe(double porcentagem) {
+	/*public boolean aplicaDescontoDe(double porcentagem) {
 		if (porcentagem > 0.3) {
 			return false;	
 		}		
 			this.valor -= this.valor * porcentagem;
 			return true;
-		} 
+		}*/ 
 	
 	 boolean temAutor() {
 		 return this.autor != null;
