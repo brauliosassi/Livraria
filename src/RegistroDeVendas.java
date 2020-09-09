@@ -12,6 +12,10 @@ public class RegistroDeVendas {
 		Ebook ebook = new Ebook(autor);
 		ebook.setNome("Test-Driven Development");
 		
+		Livro livro = new Livro(autor);
+		livro.setNome("CDI");
+		carrinho.adciona(livro);
+		
 		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
 		carrinho.adiciona(fisico);
 		carrinho.adiciona(ebook);
