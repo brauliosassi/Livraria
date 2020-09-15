@@ -1,3 +1,9 @@
+package br.com.casadocodigo.livraria.teste;
+import br.com.casadocodigo.livraria.Autor;
+import br.com.casadocodigo.livraria.produtos.Ebook;
+import br.com.casadocodigo.livraria.produtos.Livro;
+import br.com.casadocodigo.livraria.produtos.LivroFisico;
+import br.com.casadocodigo.livraria.produtos.MiniLivro;
 
 public class RegrasDeDesconto {
 
@@ -10,7 +16,7 @@ public class RegrasDeDesconto {
 		MiniLivro livro = new MiniLivro(autor);
 		livro.setValor(39.90);
 		
-		Livro livro = new Livro(autor);
+		LivroFisico livroFisico = new LivroFisico(autor);
 		livro.setValor(59.90);
 		
 		if(!livro.aplicaDescontoDe(0.3)){

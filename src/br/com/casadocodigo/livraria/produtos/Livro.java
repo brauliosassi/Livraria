@@ -1,5 +1,7 @@
+package br.com.casadocodigo.livraria.produtos;
+import br.com.casadocodigo.livraria.Autor;
 
-public abstract class Livro {
+public abstract class Livro implements Produto {
 	private String nome;
 	private String descricao;
 	private double valor;
@@ -16,7 +18,7 @@ public abstract class Livro {
 	
 	public abstract boolean aplicaDescontoDe(double porcentagem);
 		
-	void mostrarDetalhes() {
+	public void mostrarDetalhes() {
 		System.out.println("Mostrando detalhes do livro");
 		System.out.println("Nome: "+nome);
 		System.out.println("Descrição: " +descricao);
@@ -29,14 +31,6 @@ public abstract class Livro {
 		System.out.println("--");
 	}
 		
-	/*public boolean aplicaDescontoDe(double porcentagem) {
-		if (porcentagem > 0.3) {
-			return false;	
-		}		
-			this.valor -= this.valor * porcentagem;
-			return true;
-		}*/ 
-	
 	 boolean temAutor() {
 		 return this.autor != null;
 	}

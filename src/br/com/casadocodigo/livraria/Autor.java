@@ -1,3 +1,4 @@
+package br.com.casadocodigo.livraria;
 
 public class Autor {
 
@@ -29,7 +30,7 @@ public class Autor {
 		this.cpf = cpf;
 	}
 
-	void mostrarDetalhes() {
+	public void mostrarDetalhes() {
 	
 		System.out.println("Nome do Autor: "+nome);
 		System.out.println("Email do Autor: " +email);
